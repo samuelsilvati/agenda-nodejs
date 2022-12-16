@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #022946;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+.body{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.block, .register-page {
+  position: relative;
+  background-color: #e6e6e8;
+  box-shadow: 1px 5px 15px black;
+  width: 360px;
+  height: 560px;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.block > p {
+  padding-top: 26px;
+  padding-left: 51px;
+  font-weight: bold;
+}
+
+.login-link, .register {
+  background-color: #cbcbcd;
+  width: 180px;
+  height: 72px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  text-align: center;
+  padding-top: 26px;
+  font-weight: bold;
+  color: black;
+  border: 1px solid #b3b3b3;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  padding: 34px;
+}
+
+.form label {
+  font-size: 12px;
+}
+
+input {
+  height: 32px;
+  border: 1px solid #c6c6c6;
+  border-radius: 5px;
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+
+input:focus {
+  border: none;
+  outline: 2px solid #0088a3;
+}
+
+.form button {
+  height: 32px;
+  margin-top: 16px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #0088a3;
+  transition: 0.3s;
+}
+
+.form button:hover {
+  background-color: #005f72;
+  cursor: pointer;
+}
+
+.form p {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* =-=-=-=-=-=-=-REGISTER=-=-=-=-=-=-=- */
+
+.login-link {
+  left: 0;
+}
+
+.register-page > p {
+  padding-top: 26px;
+  padding-left: 237px;
+  font-weight: bold;
+}
+
+form a {
+  padding-top: 32px;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+}
+
+/* =-=-=-=-=-=-=-CONTACT=-=-=-=-=-=-=- */
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 34px;
+}
+.search {
+  margin: 0 auto;
+}
+
+.search svg {
+  margin-left: 12px;
+}
+.search-text {
+  width: 260px;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(184, 68, 68);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.contacts {
+  overflow: auto;
+  height: 314px;
+  width: 314px;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table p {
+  padding: 16px;
+
+}
+
+table tr {
+  cursor: pointer;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.back-button {
+  position: absolute;
+  text-decoration: none;
+  color: #022946;
+  font-weight: bolder;
+  bottom: 24px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.add-contact {
+  position: absolute;
+  right: 32px;
+  text-decoration: none;
+  color: #022946;
+  font-weight: bolder;
+  bottom: 24px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.add-contact:hover, .back-button:hover {
+  color: #A04B4B;
+  
+} 
+
+
+/* =-=-=-=-=-=-=-EDIT CONTACTS=-=-=-=-=-=-=- */
+.contact h1{
+  margin-bottom: 0px;
+}
+.contact h2 {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  padding-bottom: 32px;
+}
+.contact h3 {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.contact  .form {
+  margin-top: 0 ;
+}
+
+.contact button {
+  margin-top: 32px;
+}
+
+.delete {
+  margin-top: 24px !important;
+  background-color: #A04B4B !important;
+}
